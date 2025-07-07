@@ -20,7 +20,15 @@ const servicesData = [
     {
         title: "App Design",
         description: " Lorem ipsum paragraph text Lorem ipsum paragraph text Lorem ipsum paragraph"
-    }
+    },
+    {
+        title: "App Design",
+        description: " Lorem ipsum paragraph text Lorem ipsum paragraph text Lorem ipsum paragraph"
+    },
+    {
+        title: "App Design",
+        description: " Lorem ipsum paragraph text Lorem ipsum paragraph text Lorem ipsum paragraph"
+    },
 ]
 
 const Services = () => {
