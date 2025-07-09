@@ -35,6 +35,7 @@ const Work = () => {
         },
     ]
 
+    const { ref: ref, inView: inView } = useInView({ triggerOnce: true, threshold: 0.2 });
     const { ref: headingRef, inView: headingInView } = useInView({ triggerOnce: true, threshold: 0.2 });
     const { ref: paraRef, inView: paraInView } = useInView({ triggerOnce: true, threshold: 0.2 });
     const { ref: containerRef, inView: containerInView } = useInView({ triggerOnce: true, threshold: 0.2 });
@@ -71,9 +72,9 @@ const Work = () => {
 
             </div>
 
-            <div>
+            <motion.div ref={ref} initial={{opacity:0,y: 100}} animate={inView? {opacity:1, y: 0}:{}} transition={{delay:0.7, duration:0.5}}>
                 <Companies/>
-            </div>
+            </motion.div>
         </div>
     )
 }

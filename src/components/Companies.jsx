@@ -1,7 +1,6 @@
 import React from 'react'
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'motion/react';
-// import { useInView } from 'react-intersection-observer';
 
 
 const Companies = () => {
@@ -16,8 +15,31 @@ const Companies = () => {
         'Accenture'
 
     ]
-    const companiesList = [...companies, ...companies]
+    const companiesList = [...companies, ...companies, ...companies]
 
+    const scrollVariant1 = {
+        animate: {
+            x: [0, -2000],
+            transition: {
+                repeat: Infinity,
+                repeatType: 'loop',
+                duration: 15,
+                ease: 'linear'
+            }
+        }
+    }
+
+    const scrollVariant2 = {
+        animate: {
+            x: [-2000, 0],
+            transition: {
+                repeat: Infinity,
+                repeatType: 'loop',
+                duration: 15,
+                ease: 'linear'
+            }
+        }
+    }
 
 
     return (
@@ -26,7 +48,10 @@ const Companies = () => {
                 <h2 className='text-3xl md:text-4xl font-bold mb-8'>Companies I've Worked With</h2>
 
                 <div className='overflow-hidden relative w-full'>
-                    <div className='whitespace-nowrap flex space-x-10'>
+                    <motion.div 
+                    variants={scrollVariant1}
+                    animate="animate"
+                    className='whitespace-nowrap flex space-x-10'>
                         {companiesList.map((company, index) => {
                             return (
                                 <div 
@@ -34,11 +59,13 @@ const Companies = () => {
                                 key={index}>{company}</div>
                             )
                         })}
-                    </div>
+                    </motion.div>
                 </div>
 
                 <div className='overflow-hidden relative w-full mt-5'>
-                    <div className='whitespace-nowrap flex space-x-10'>
+                    <motion.div 
+                    variants={scrollVariant2}
+                    animate="animate" className='whitespace-nowrap flex space-x-10'>
                         {companiesList.map((company, index) => {
                             return (
                                 <div 
@@ -46,7 +73,7 @@ const Companies = () => {
                                 key={index}>{company}</div>
                             )
                         })}
-                    </div>
+                    </motion.div>
                 </div>
 
 
