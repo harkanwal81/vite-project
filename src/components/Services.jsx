@@ -34,7 +34,7 @@ const servicesData = [
 const Services = () => {
 
     const { ref: containerRef, inView: containerInView } = useInView({ triggerOnce: true, threshold: 0.2 });
-    const { ref: subContainerRef, inView: subContainerInView } = useInView({ triggerOnce: true, threshold: 0.2 });
+    const { ref: subContainerRef, inView: subContainerInView } = useInView({ triggerOnce: true, threshold: 0, rootMargin:'100%' });
 
     return (
         <div id="services" className='text-white py-16'>

@@ -10,7 +10,7 @@ const Contact = () => {
     const { ref: headingRef, inView: headingInView } = useInView({ triggerOnce: true, threshold: 0.2 });
     const { ref: paraRef, inView: paraInView } = useInView({ triggerOnce: true, threshold: 0.2 });
     const { ref: containerRef, inView: containerInView } = useInView({ triggerOnce: true, threshold: 0.2 });
-    const { ref: footer, inView: footerInView } = useInView({ triggerOnce: true, threshold: 0.2 });
+    const { ref: footer, inView: footerInView } = useInView({ triggerOnce: true, threshold: 0.2, rootMargin:'10px' });
 
     return (
         <div id="contact">
@@ -91,7 +91,7 @@ const Contact = () => {
             {/* Footer */}
             <motion.div 
             ref={footer} initial={{opacity:0}} animate={footerInView? {opacity:1}:{}} transition={{delay:1, duration:0.5}}
-            className='mt-48 flex justify-between items-center p-5 text-white border-t-2 border-purple-500'>
+            className='mt-28 flex justify-between items-center p-5 text-white border-t-2 border-purple-500'>
                 <p>&copy; 2025. All Rights Reserved</p>
                 <p>HAPPY CODING</p>
                 <div className='flex justify-center gap-x-4 text-white mt-4'>
