@@ -13,7 +13,7 @@ const Contact = () => {
     const { ref: footer, inView: footerInView } = useInView({ triggerOnce: true, threshold: 0.2 });
 
     return (
-        <div>
+        <div id="contact">
             <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-12'>
                 <motion.h2 
                 ref={headingRef} initial={{opacity:0, y:-100}} animate={headingInView? {opacity:1, y:0}:{}} transition={{delay:0.3, duration:0.5}}

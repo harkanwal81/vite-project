@@ -41,7 +41,7 @@ const Work = () => {
     const { ref: containerRef, inView: containerInView } = useInView({ triggerOnce: true, threshold: 0.2 });
 
     return (
-        <div className='py-12'>
+        <div id="work" className='py-12'>
             <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
                 <motion.h2
                     ref={headingRef} initial={{ opacity: 0, y: 100 }} animate={headingInView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.3, duration: 0.5 }}
