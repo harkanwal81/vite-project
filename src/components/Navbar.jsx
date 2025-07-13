@@ -39,8 +39,8 @@ const Navbar = () => {
                 transition={{ duration: 0.5 }}
                 className='container mx-auto hidden md:flex justify-between items-center py-6'>
                 <div className='text-xl lg:text-2xl font-bold flex items-center gap-1'>
-                    <span className='text-white'>HAPPY</span>
-                    <span className='text-purple-500'>CODING</span>
+                    <span className='text-white'>Mr. Singh</span>
+                    <span className='text-purple-500'>Portfolio</span>
                 </div>
                 <div>
                     <ul className='hidden md:flex items-center space-x-6 list-none lg:text-lg md:text-base text-white'>
@@ -53,7 +53,7 @@ const Navbar = () => {
                         )}
                     </ul>
                 </div>
-                <a className='md:text-base lg:text-lg bg-purple-500 hover:bg-purple-400 text-white px-4 py-2 rounded-full'>Download CV</a>
+                <a href='https://docs.google.com/document/d/1iZM_uYrv9Zrw16_pTlgC3-ZutpP_N3Wi/edit?usp=drive_link&ouid=106397548204668905522&rtpof=true&sd=true' className='md:text-base lg:text-lg bg-purple-500 hover:bg-purple-400 text-white px-4 py-2 rounded-full' target='_blank'>Download CV</a>
             </motion.div>
 
             <div className='flex md:hidden justify-between'>
@@ -73,7 +73,8 @@ const Navbar = () => {
                                         </li>
                                     })}
                                 </ul>
-                                <a className='text-lg bg-purple-500 hover:bg-purple-400 text-white px-4 py-2 rounded-full mt-6'>Download CV</a>
+                                <a href='https://docs.google.com/document/d/1iZM_uYrv9Zrw16_pTlgC3-ZutpP_N3Wi/edit?usp=drive_link&ouid=106397548204668905522&rtpof=true&sd=true' target='_blank' 
+                                className='text-lg bg-purple-500 hover:bg-purple-400 text-white px-4 py-2 rounded-full mt-6'>Download CV</a>
                             </div>
                         )}
                     </motion.div>
@@ -84,8 +85,8 @@ const Navbar = () => {
                     animate={{ opacity: 1, x: 0, y: 0 }}
                     transition={{ duration: 0.5 }}
                     className='text-xl font-bold flex items-center gap-2 py-6 px-4'>
-                    <span className='text-white'>HAPPY</span>
-                    <span className='text-purple-500'>CODING</span>
+                    <span className='text-white'>Mr. Singh</span>
+                    <span className='text-purple-500'>Portfolio</span>
                 </motion.div>
             </div>
         </div>
