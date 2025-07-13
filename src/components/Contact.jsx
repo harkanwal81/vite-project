@@ -68,20 +68,20 @@ const Contact = () => {
                         </div>
                     </motion.div>
                 </div>
-                {/* Form start */}
-                <motion.form 
+{/* Form start */}
+                <motion.form  action="https://formspree.io/f/myzpgerj" method="POST"
                 ref={containerRef} initial={{opacity:0, x:50}} animate={containerInView? {opacity:1, x:0}:{}} transition={{delay:0.8, duration:0.5}}
                 className='my-4 text-white'>
                     <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
-                        <input type='text' placeholder='Full Name' className='border-purple-500 bg-gray-900 p-4 rounded-md w-full' />
-                        <input type='email' placeholder='Your Email' className='border-purple-500 bg-gray-900 p-4 rounded-md w-full' />
+                        <input type='text' name='text' placeholder='Full Name' className='border-purple-500 bg-gray-900 p-4 rounded-md w-full' required autoComplete='off'/>
+                        <input type='email' name='email' placeholder='Your Email' className='border-purple-500 bg-gray-900 p-4 rounded-md w-full' required autoComplete='off'/>
                     </div>
                     <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4'>
-                        <input type='text' placeholder='Phone Number' className='border-purple-500 bg-gray-900 p-4 rounded-md w-full' />
-                        <input type='email' placeholder='Budget' className='border-purple-500 bg-gray-900 p-4 rounded-md w-full' />
+                        <input type='number' name='PhoneNumber' placeholder='Phone Number' className='border-purple-500 bg-gray-900 p-4 rounded-md w-full' required autoComplete='off'/>
+                        <input type='number' name='budget' placeholder='Budget' className='border-purple-500 bg-gray-900 p-4 rounded-md w-full' required autoComplete='off'/>
                     </div>
 
-                    <textarea placeholder='Message' className='border-purple-500 bg-gray-900 p-4 rounded-md w-full mt-4'></textarea>
+                    <textarea placeholder='Message' name='message' className='border-purple-500 bg-gray-900 p-4 rounded-md w-full mt-4' required autoComplete='off'></textarea>
                     
                     <motion.button 
                     whileHover={{scale:1.05}} whileTap={{scale:0.95}}
