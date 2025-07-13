@@ -73,7 +73,7 @@ const Navbar = () => {
                                         </li>
                                     })}
                                 </ul>
-                                <a className='text-lg bg-purple-500 hover:bg-purple-400 text-white px-4 py-2 rounded-full'>Download CV</a>
+                                <a className='text-lg bg-purple-500 hover:bg-purple-400 text-white px-4 py-2 rounded-full mt-6'>Download CV</a>
                             </div>
                         )}
                     </motion.div>
