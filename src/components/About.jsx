@@ -47,7 +47,7 @@ const About = () => {
                         animate={imageInView ? { opacity: 1, x: 0 } : {}}
                         transition={{ delay: 0.6, duration: 0.5 }}
                         className='mb-8 md:mb-0 md:mr-8 flex justify-center'>
-                        <img src={avtar2} className='w-2/3 sm:w-1/2 md:w-10/12' alt="Avatar" />
+                        <img src={avtar2} className='w-2/4 sm:w-1/2 md:w-6/12' alt="Avatar" />
                     </motion.div>
 
                     {/* Right Paragraph */}

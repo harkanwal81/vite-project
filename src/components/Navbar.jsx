@@ -38,7 +38,7 @@ const Navbar = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 className='container mx-auto hidden md:flex justify-between items-center py-6'>
-                <div className='text-xl lg:text-2xl font-bold flex items-center gap-1'>
+                <div className='text-xl lg:text-2xl font-bold flex items-center gap-1 ml-2'>
                     <span className='text-white'>Mr. Singh</span>
                     <span className='text-purple-500'>Portfolio</span>
                 </div>
@@ -53,7 +53,7 @@ const Navbar = () => {
                         )}
                     </ul>
                 </div>
-                <a href='https://docs.google.com/document/d/1iZM_uYrv9Zrw16_pTlgC3-ZutpP_N3Wi/edit?usp=drive_link&ouid=106397548204668905522&rtpof=true&sd=true' className='md:text-base lg:text-lg bg-purple-500 hover:bg-purple-400 text-white px-4 py-2 rounded-full' target='_blank'>Download CV</a>
+                <a href='https://docs.google.com/document/d/1iZM_uYrv9Zrw16_pTlgC3-ZutpP_N3Wi/edit?usp=drive_link&ouid=106397548204668905522&rtpof=true&sd=true' className='md:text-base lg:text-md bg-purple-500 hover:bg-purple-400 text-white px-6 py-2 rounded-full mr-2' target='_blank'>Download CV</a>
             </motion.div>
 
             <div className='flex md:hidden justify-between'>
