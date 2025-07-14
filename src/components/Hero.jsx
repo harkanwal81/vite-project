@@ -10,7 +10,7 @@ const Hero = () => {
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
-                className='mx-auto w-2/3 md:w-1/3 lg:w-1/4' src={avtar} />
+                className='mx-auto w-1/2 sm:w-1/4 md:w-1/5' src={avtar} />
 
             <div className='container mx-auto text-center'>
                 <motion.h1
