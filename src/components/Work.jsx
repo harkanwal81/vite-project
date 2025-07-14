@@ -38,7 +38,7 @@ const Work = () => {
     const { ref: ref, inView: inView } = useInView({ triggerOnce: true, threshold: 0.2 });
     const { ref: headingRef, inView: headingInView } = useInView({ triggerOnce: true, threshold: 0.2 });
     const { ref: paraRef, inView: paraInView } = useInView({ triggerOnce: true, threshold: 0.2 });
-    const { ref: containerRef, inView: containerInView } = useInView({ triggerOnce: true, threshold: 0.2 });
+    const { ref: containerRef, inView: containerInView } = useInView({ triggerOnce: true, threshold: 0.2 ,rootMargin:'20%'});
 
     return (
         <div id="work" className='py-12'>
