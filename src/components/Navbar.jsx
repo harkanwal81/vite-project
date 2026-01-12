@@ -85,7 +85,7 @@ const Navbar = () => {
                     animate={{ opacity: 1, x: 0, y: 0 }}
                     transition={{ duration: 0.5 }}
                     className='text-xl font-bold flex items-center gap-2 py-6 px-4'>
-                    <span className='text-white'>Mr. Singh</span>
+                    <span className='text-white'>Mr. Harkanwal Singh</span>
                     <span className='text-purple-500'>Portfolio</span>
                 </motion.div>
             </div>
